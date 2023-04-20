@@ -11,6 +11,7 @@ module.exports = {
                 clicked: '#43444b',
                 friendIcon: '#81848e',
                 divider: '#404147',
+                iconInbox: '#23a559',
             },
         },
     },

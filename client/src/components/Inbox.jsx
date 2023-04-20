@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles';
-import { plus, server, discord, explore, download } from '../img';
+import { server, discord, PlusIcon, ExploreIcon, DownloadIcon } from '../img';
 const Inbox = () => {
     return (
         <div className={`h-screen ${styles.inboxWidth} bg-[#1e1f22] relative`}>
@@ -22,14 +22,14 @@ const Inbox = () => {
                 </div>
 
                 <div className="pt-2">
-                    <div className="flex items-center justify-center h-[48px] w-[48px]  rounded-full cursor-pointer bg-[#313338] hover:rounded-2xl hover:bg-[#5b5d63]">
-                        <img src={plus} alt="plus" className=" h-[24px] w-[24px]" />
+                    <div className="flex items-center justify-center h-[48px] w-[48px]  rounded-full cursor-pointer bg-[#313338] hover:rounded-2xl hover:bg-iconInbox group">
+                        <PlusIcon className="text-iconInbox group-hover:text-white " />
                     </div>
                 </div>
 
                 <div className="pt-2">
-                    <div className="flex items-center justify-center h-[48px] w-[48px]  rounded-full cursor-pointer bg-[#313338] hover:rounded-2xl hover:bg-[#5b5d63]">
-                        <img src={explore} alt="explore" className=" h-[24px] w-[24px]" />
+                    <div className="flex items-center justify-center h-[48px] w-[48px]  rounded-full cursor-pointer bg-[#313338] hover:rounded-2xl hover:bg-iconInbox group">
+                        <ExploreIcon className="text-iconInbox group-hover:text-white" />
                     </div>
                 </div>
 
@@ -38,8 +38,8 @@ const Inbox = () => {
                 </div>
 
                 <div>
-                    <div className="flex items-center justify-center h-[48px] w-[48px]  rounded-full cursor-pointer bg-[#313338] hover:rounded-2xl hover:bg-[#5b5d63]">
-                        <img src={download} alt="download" className=" h-[24px] w-[24px]" />
+                    <div className="flex items-center justify-center h-[48px] w-[48px]  rounded-full cursor-pointer bg-[#313338] hover:rounded-2xl hover:bg-iconInbox group">
+                        <DownloadIcon className="text-iconInbox group-hover:text-white" />
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
+import { FriendIcon, NitroIcon, PlusIcon } from '../img';
 import styles from '../styles';
-import { nitro, friends, plus } from '../img';
 
 const Sidebar = () => {
     return (
@@ -13,30 +13,22 @@ const Sidebar = () => {
                 />
             </div>
             <div className="p-[10px]">
-                <div className="flex items-center p-[10px] rounded-md cursor-pointer px-2 hover:bg-[#36393f]">
-                    <div className="mr-[10px]">
-                        <img
-                            src={friends}
-                            className="w-6 filter invert-100 opacity-60 cursor-pointer h-[25px] w-[25px]"
-                            alt="friends"
-                        />
+                <div className="flex items-center p-[10px] rounded-md cursor-pointer px-2 bg-[#41454c] hover:bg-[#36393f]">
+                    <div className="mr-[10px] pl-1">
+                        <FriendIcon className="text-textHovered" />
                     </div>
-                    <p className="text-gray-500">Friends</p>
+                    <span className="text-textHovered font-semibold">Friends</span>
                 </div>
                 <div className="flex items-center p-[10px] rounded-md cursor-pointer mb-[10px] px-2 hover:bg-[#36393f]">
-                    <div className="mr-[10px]">
-                        <img
-                            src={nitro}
-                            className="w-6 filter invert-100 opacity-60 cursor-pointer h-[25px] w-[25px]"
-                            alt="nitro"
-                        />
+                    <div className="mr-[10px] pl-1">
+                        <NitroIcon className="text-text" />
                     </div>
-                    <p className="text-gray-500">Nitro</p>
+                    <span className="text-text font-semibold">Nitro</span>
                 </div>
                 <div className="flex opacity-4 mt-[15px] mb-[15px] cursor-default text-gray-500 justify-between items-center hover:text-blue-100">
                     <h1 className="text-xs font-medium pl-2">DIRECT MESSAGES</h1>
-                    <div className="flex flex-shrink-0 w-[16px] h-[16px] ml-0 mr-[2px] cursor-pointer">
-                        <img src={plus} alt="plus" />
+                    <div className="flex items-center  w-[16px] h-[16px] ml-0 mr-[2px] cursor-pointer">
+                        <PlusIcon className="text-[#b5bac1] hover:text-white" />
                     </div>
                 </div>
             </div>
